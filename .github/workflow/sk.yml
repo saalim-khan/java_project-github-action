@@ -1,2 +1,13 @@
 name: java build env
+   
+  on:
+     push: 
+      branches: [main]
+on: 
+  pull_request: 
+    branches: [main] 
+  
+  jobs:
+    build-java:
 
+    runs-on: ububtu-latest
